@@ -1,0 +1,44 @@
+ stataic block and construction:
+                             constructs are use to initialise the objects. for every class there will be a default construction when ever you create an abject construcer will be fault then object will be create
+ *constructor having class name and better properties.
+
+Example:
+       public class q2{
+          public static void main(string[]args){
+             Demo d1 = new Demo();
+             Demo d2 = new Demo();
+      }
+}  
+class Demo{
+   static{
+        system.out.println("Static Block");
+    }
+  Demo() {
+      System.out.println("Construction");
+   }
+*****************************************************************************************************************************************************************
+!!!)Static Block:
+              static block will be created we just satatic key word.it will call atuomatically no need to call with either class or object.
+
+
+
+!!!)St atic Method: 
+              first satatic method no need to call with object we cann directly call with class name and here sattic will acts as instance an object.
+
+example:
+ class Main{
+     public static void main(string[]args){
+        person obj = new person();
+         obj.setage(24);
+         int res = obj.getAge();
+        System.out.println(res);
+ }
+}          
+class person{
+int age;
+void setAge(intage1){
+    this.age = age1;
+  }
+int getAge(){
+    return age;
+}
